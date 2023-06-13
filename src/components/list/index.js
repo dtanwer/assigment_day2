@@ -31,7 +31,7 @@ const List = ({ mode, inputData, setCompleteData, setDeleteData }) => {
                 </tr>
                 {
                     mainData?.map((item,i) => {
-
+                        if((mode===0 && !item.isDelete)|| (mode===-1 && item.isDelete) ||mode===1 )
                             return (
                                 <tr>
                                     <td className='task'><p>{item.text}</p></td>

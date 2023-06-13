@@ -4,12 +4,12 @@
 }
 .myform input{
     border-radius: 10px;
-    border: none;
     margin: 20px;
     height:50px;
     width:400px;
     font-size: larger;
     padding-right: 1rem;
+    border: 2px solid rgb(164, 162, 162);
 
 
 }
@@ -17,6 +17,10 @@
 .text{
     width:500px; 
     padding-left: 1rem;
+
+}
+.inputError{
+    border: 2px solid #e74c3c !important;
 }
 
 
@@ -27,4 +31,11 @@
     background-color: green;
     color: white;
     border: none;
+}
+
+.errorMsg{
+    display: block;
+    color: #e74c3c;
+    margin: 0;
+    line-height: 0.1;
 }
